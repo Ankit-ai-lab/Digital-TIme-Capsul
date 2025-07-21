@@ -2,6 +2,8 @@
 🧭 Introduction
 Digital Time Capsule is a memory preservation app that lets users securely store personal messages, media, and predictions to be unlocked at a specific future date. It's like sending a surprise to your future self or loved ones! The project focuses on emotional connection, secure storage, and creative expression with a modern web experience.
 
+<img width="1912" height="928" alt="image" src="https://github.com/user-attachments/assets/c79a3c55-d2d5-4fbf-923b-eece265429a0" />
+<img width="1918" height="920" alt="image" src="https://github.com/user-attachments/assets/b046f43a-b40b-409c-a1f1-475143d0a24c" />
 🔧 Project Type
 Fullstack Application
 
@@ -74,6 +76,7 @@ bash
 Copy
 Edit
 git clone https://github.com/your-username/digital-time-capsule.git
+
 cd digital-time-capsule/frontend
 npm install
 npm start
