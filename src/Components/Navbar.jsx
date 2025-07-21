@@ -9,19 +9,19 @@ import { Link } from 'react-router-dom'
   }
 
   return (
-    <nav className="bg-[#182848] text-[#FFD166] px-4 py-3 shadow-md">
+    <nav className="bg-[#1e4b8f] text-[#FFD166] px-4 py-3 shadow-md">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold">
-          TimeCapsule
+          Digital Time Capsule
         </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-sm font-medium items-center">
           <li><Link to="/" className="hover:text-white">Home</Link></li>
-          <li><Link to="/about" className="hover:text-white">About</Link></li>
-          <li><Link to="/dashboard" className="hover:text-white">My Capsules</Link></li>
+       {/*    <li><Link to="/about" className="hover:text-white">About</Link></li> */}
+        {/*    <li><Link to="/mycapsul" className="hover:text-white">My Capsules</Link></li>  */}
           <li><Link to="/login" className="hover:text-white">Login</Link></li>
-          <li><Link to="/signup" className="hover:text-white">Signup</Link></li>
+      {/*     <li><Link to="/signup" className="hover:text-white">Signup</Link></li> */}
         </ul>
 
         {/* Hamburger Icon */}
@@ -48,7 +48,7 @@ import { Link } from 'react-router-dom'
         <ul className="md:hidden mt-3 space-y-3 text-sm font-medium">
           <li><Link to="/" className="block hover:text-white">Home</Link></li>
           <li><Link to="/about" className="block hover:text-white">About</Link></li>
-          <li><Link to="/dashboard" className="block hover:text-white">My Capsules</Link></li>
+        {/*   <li><Link to="/mycapsul" className="block hover:text-white">My Capsules</Link></li> */}
           <li><Link to="/login" className="block hover:text-white">Login</Link></li>
           <li><Link to="/signup" className="block hover:text-white">Signup</Link></li>
         </ul>

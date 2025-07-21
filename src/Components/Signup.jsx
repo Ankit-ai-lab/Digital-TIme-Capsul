@@ -171,7 +171,7 @@ function Signup() {
       } else {
         localStorage.setItem("username", name);
         alert("Check your email to confirm signup");
-        navigate("/dashboard");
+        navigate("/login");
       }
     } catch (err) {
       console.error(err);

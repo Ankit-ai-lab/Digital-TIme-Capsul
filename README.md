@@ -1,67 +1,163 @@
-DigitalTimeCapsule_Personal
-Context:
-A digital time capsule allows users to preserve memories, thoughts, and predictions for the future, to be opened at a later date. This app creates a unique way to capture the present and share it with the future self.
+📦 Digital Time Capsule
+🧭 Introduction
+Digital Time Capsule is a memory preservation app that lets users securely store personal messages, media, and predictions to be unlocked at a specific future date. It's like sending a surprise to your future self or loved ones! The project focuses on emotional connection, secure storage, and creative expression with a modern web experience.
 
-Project Goal:
-Develop a digital time capsule application where users can store photos, messages, videos, and predictions, which will be locked and accessible only at a specified future date.
+🔧 Project Type
+Fullstack Application
 
-L1: Minimum Expected Features
-These foundational features provide the basic functionality necessary for the app.
+Frontend: React + Tailwind CSS
 
-User Authentication
+Backend & Auth & Storage: Supabase
 
-Create a secure registration and login system that allows users to sign up with an email and password. Authentication ensures that each user has their own private space for creating and managing time capsules. This should include password recovery options.
-Create Time Capsule
+🚀 Deployed App
+Frontend: https://digital-time-capsule.vercel.app
 
-Allow users to create a time capsule where they can store various types of content, such as written messages, photos, and videos. The interface should be user-friendly, enabling users to easily upload content and type messages that reflect their thoughts, memories, or predictions for the future.
-Set Unlock Date
+Backend (Supabase): https://supabase.io/dashboard/project/your-project-id
 
-Implement a feature that allows users to set a specific unlock date for each time capsule. This date should be flexible, allowing users to set it for anywhere from a few months to several years in the future. A calendar widget can be used to make this process simple and intuitive.
-Multiple Time Capsules
+Database (Supabase PostgreSQL): https://supabase.io
 
-Allow users to create multiple time capsules with different unlock dates. Each capsule should be listed in a dashboard, where users can see the name, unlock date, and a short description of each one. This feature gives users flexibility to create capsules for different moments or people.
-Lock Features
+📁 Directory Structure
+pgsql
+Copy
+Edit
+digital-time-capsule/
+├─ frontend/               # React App
+│  ├─ components/
+│  ├─ pages/
+│  ├─ auth/
+│  ├─ assets/
+├─ backend/ (Handled by Supabase)
+│  ├─ Database Tables (Capsules, Users)
+│  ├─ Storage (Media uploads)
+🎥 Video Walkthrough of the Project
+📽️ [Add your 1–3 minute demo video link here]
 
-Once a time capsule is created and submitted, it should be locked, preventing any changes to the content. This ensures that users cannot modify the capsule until it is opened, maintaining the integrity of their original messages and memories.
-Reminder Notification
+🧑‍💻 Video Walkthrough of the Codebase
+📽️ [Add your 3–5 minute walkthrough link here]
 
-Implement a reminder notification feature that alerts users as the unlock date approaches. The system should notify users a few days or weeks before the time capsule unlocks, building excitement and anticipation.
-Unique Features
-These features add depth and creativity to the app, highlighting the student's contribution and providing a more personalized user experience.
+✨ Features
+🔐 User Authentication (Sign up/Login with Supabase)
 
-Add Future Recipients
+📬 Create a time capsule with title, message, unlock date, and media (images, videos, PDFs)
 
-Allow users to assign future recipients for their time capsule. For instance, a user could select a friend or family member to be notified when the capsule unlocks, sharing the contents with them. This adds a collaborative and social element to the app, enhancing its emotional value. When the unlock date arrives, an email or in-app notification will inform the recipient, granting them access.
-Secret Message Revealer
+⏳ Countdown timer that unlocks capsules when the time arrives
 
-Enable users to include secret messages that will only be revealed upon the unlocking of the time capsule. These messages can be hidden from the user’s current view and will remain sealed until the specified date. This adds an element of surprise and curiosity, making the capsule opening experience more engaging.
-Capsule Themes and Personalization
+🎁 Surprise capsule sharing via email invite
 
-Allow users to personalize their time capsules by choosing from a range of customizable themes and designs. Users can select a background image or color scheme that matches the mood of their capsule (e.g., a nostalgic theme, futuristic style, or playful vibe). Personalization adds emotional resonance to the capsule and enhances user engagement.
-Memory Milestones
+🌐 Unique link-based access to view capsules
 
-Add a feature where users can mark significant life milestones, such as birthdays, anniversaries, or important events. These milestones can be highlighted within the capsule and carry specific messages or media. For example, a user might mark a milestone for a graduation and attach a special video or note reflecting on that event. This feature creates meaningful moments within the capsule.
-Challenging Features
-These advanced features require more effort and skills to implement, pushing the student to think creatively and overcome technical challenges.
+📤 File uploads using Supabase storage
 
-Sharable Capsule Links with Expiry Date
+📱 Responsive design with Tailwind CSS
 
-Implement a feature that allows users to generate a secure, shareable link for a time capsule. This link can be sent to friends or family members, allowing them to view the capsule when it unlocks. Additionally, the user can set an expiry date for the link, ensuring that it is only available for a limited time after the capsule is opened. This feature enhances the capsule’s sharing capabilities while maintaining control over privacy and access.
-Scheduled Messages for Future Delivery
+🎨 Simple, clean UI experience
 
-Add the ability for users to schedule messages that will be sent to their future selves on specific dates. For example, a user might want to write a message that will be delivered via email on their birthday five years from now. This adds a unique and personal touch to the app, allowing users to communicate with their future selves in real time.
-AI-Powered Prediction Assistance
+🧠 Design Decisions & Assumptions
+Used Supabase for backend, database, auth, and storage to speed up development and keep it serverless
 
-Integrate an AI feature that assists users in writing predictions or reflective messages for the future. The AI could suggest prompts based on the user’s current interests, activities, or even world events, helping them think more deeply about what the future might hold. This makes the capsule creation process more interactive and thought-provoking.
-Dashboard with Unlock Progress Tracker
+Capsule data is stored with an associated unlock timestamp
 
-Implement a dashboard that visually tracks the progress of each time capsule toward its unlock date. This could include a progress bar or countdown that updates daily, giving users a visual reminder of how much time is left before the capsule opens. The dashboard should also show summary details like the type of content stored in each capsule (e.g., photos, videos, text), enhancing user engagement over time.
-Additional Features
-These are supplementary features that can be added if time permits, improving usability and aesthetics.
+Capsules cannot be edited once created, maintaining the integrity of time-locked memories
 
-Dark Mode
+Only invited users (via email) or capsule owners can view the capsule
 
-Offer a dark mode feature for users who prefer viewing the app in low-light environments. This can be implemented as a simple toggle in the app settings.
-Responsive Design
+No third-party email service — Supabase's built-in auth email is used for invitation
 
-Ensure the app is fully responsive, allowing users to access it seamlessly from desktops, tablets, and mobile devices. This involves designing flexible layouts and interactions that work well across various screen sizes.
+📦 Installation & Getting Started
+Prerequisites
+Node.js v18+
+
+Supabase account
+
+Setup Instructions
+bash
+Copy
+Edit
+git clone https://github.com/your-username/digital-time-capsule.git
+cd digital-time-capsule/frontend
+npm install
+npm start
+Supabase Setup
+Create a Supabase project
+
+Set up capsules and users tables
+
+Enable email/password auth
+
+Add bucket for media uploads
+
+Update supabaseClient.js with your Supabase project URL and key
+
+📖 Usage
+Sign up or log in
+
+Create a capsule by entering title, message, media, and unlock date
+
+Invite people by entering their name & email
+
+On the unlock date, recipients will be notified and can view the capsule
+
+bash
+Copy
+Edit
+# Example usage in terminal (React Dev Mode)
+npm start
+📸 Screenshot: Creating a Capsule
+
+📸 Screenshot: Capsule Countdown
+
+🔐 Credentials for Testing
+yaml
+Copy
+Edit
+Test Email: testuser@capsule.com
+Password: Test1234
+🌐 APIs Used
+Supabase Auth API
+
+Supabase Realtime Database
+
+Supabase Storage API
+
+🔁 API Endpoints
+(Supabase auto-generates SQL-based endpoints. Here's how they map logically.)
+
+POST /capsules – Create a new capsule
+
+GET /capsules/:userId – Fetch all capsules by a user
+
+GET /capsule/:id – Fetch a single capsule
+
+POST /invite – Store invited user info
+
+Supabase Storage: https://xyz.supabase.co/storage/v1/object/public/media/{file}
+
+🛠 Technology Stack
+Frontend:
+
+React
+
+Tailwind CSS
+
+React Router DOM
+
+Lucide Icons
+
+Framer Motion (optional for animation)
+
+Backend/Infra:
+
+Supabase (PostgreSQL, Auth, Storage)
+
+Email invite via Supabase triggers
+
+📌 Future Improvements
+Add notifications (email reminder when capsule unlocks)
+
+AI-generated memory titles/predictions
+
+Private/public capsule options
+
+Capsule search & filtering
+
+Responsive PWA support for offline viewing
