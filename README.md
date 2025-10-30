@@ -16,7 +16,8 @@ Each capsule stores text, media, and unlock dates securely using **Supabase**, e
 When the unlock time arrives, users or invited recipients can open the capsule and revisit those moments — like unwrapping a piece of the past.  
 
 ---
-
+<img width="1912" height="928" alt="image" src="https://github.com/user-attachments/assets/c79a3c55-d2d5-4fbf-923b-eece265429a0" />
+<img width="1918" height="920" alt="image" src="https://github.com/user-attachments/assets/b046f43a-b40b-409c-a1f1-475143d0a24c" />
 ## 🛠️ Project Type
 
 | Layer | Technology |
